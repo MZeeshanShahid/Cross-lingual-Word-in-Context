@@ -9,6 +9,6 @@ Run slurm/c.slurm. This will generate the file prediction.jsonl. On our github t
 
 
 Team members:
-Sigurd Norbye
-Ola Skeie
-Zeeshan Shahid
+- Sigurd Norbye
+- Ola Skeie
+- Zeeshan Shahid
