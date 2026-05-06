@@ -1,7 +1,6 @@
-# Obligatory 2: Cross-lingual Word-in-Context
+# Cross-lingual Word-in-Context
 
-Deadline: 20. 03. 2026 at 21:59
-
+Full description of the task:
 [**Assignment PDF**](https://github.uio.no/in5550/2026/blob/main/obligatories/2/in5550_obligatory_2_2026.pdf)
 
 
