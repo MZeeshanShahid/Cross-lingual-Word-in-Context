@@ -1,0 +1,43 @@
+Starting job 3129185 on gpu-9 on Fox at Thu Mar 12 15:30:09 CET 2026
+
+
+==================================================
+Training on: de
+==================================================
+Epoch 01 | Loss: 0.2417 | Alpha: 0.5656 | Acc: 0.4357
+Epoch 02 | Loss: 0.1212 | Alpha: 0.5607 | Acc: 0.4164
+Epoch 03 | Loss: 0.0867 | Alpha: 0.6187 | Acc: 0.5168
+Epoch 04 | Loss: 0.0648 | Alpha: 0.6030 | Acc: 0.4908
+Epoch 05 | Loss: 0.0502 | Alpha: 0.6025 | Acc: 0.4835
+
+--- Results for model trained on de ---
+en: Alpha=0.6025 | Acc=0.4835
+de: Alpha=0.6514 | Acc=0.5747
+zh: Alpha=0.1569 | Acc=0.5506
+ru: Alpha=0.4889 | Acc=0.5837
+es: Alpha=0.4771 | Acc=0.4646
+no: Alpha=0.4951 | Acc=0.6941
+
+Job 3129185 consumed 9.5 billing hours from project ec403.
+
+Submitted 2026-03-12T15:29:55; waited 14.0 seconds in the queue after becoming eligible to run.
+
+Requested wallclock time: 3.0 hours
+Elapsed wallclock time:   30.1 minutes
+
+Job exited normally.
+
+Task and CPU statistics:
+ID             CPUs  Tasks  CPU util                Start   Elapsed  Exit status
+3129185           4            0.0 %  2026-03-12T15:30:09  1806.0 s  0
+3129185.batch     4      1    28.4 %  2026-03-12T15:30:09  1806.0 s  0
+
+Used CPU time:   34.2 CPU minutes
+Unused CPU time: 1.4 CPU hours
+
+Memory statistics, in GiB:
+ID              Alloc   Usage
+3129185          32.0        
+3129185.batch    32.0     2.4
+
+Job 3129185 completed at Thu Mar 12 16:00:16 CET 2026

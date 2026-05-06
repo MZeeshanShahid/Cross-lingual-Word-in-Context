@@ -1,0 +1,14 @@
+Starting job 3132807 on gpu-8 on Fox at Fri Mar 13 14:17:04 CET 2026
+
+Job started: Fri Mar 13 14:17:04 CET 2026
+Node: gpu-8
+GPU: 0
+Python: /usr/bin/python
+PyTorch: 
+CUDA available: 
+
+
+Job finished: Fri Mar 13 14:17:04 CET 2026
+
+
+Job 3132807 completed at Fri Mar 13 14:17:04 CET 2026

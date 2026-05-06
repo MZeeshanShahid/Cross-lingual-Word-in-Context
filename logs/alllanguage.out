@@ -1,0 +1,151 @@
+Starting job 3125508 on gpu-9 on Fox at Thu Mar 12 09:58:10 CET 2026
+
+
+==================================================
+Training on: en
+==================================================
+Epoch 01 | Loss: 0.2433 | Alpha: 0.5636 | Acc: 0.4581
+Epoch 02 | Loss: 0.1327 | Alpha: 0.6006 | Acc: 0.4385
+Epoch 03 | Loss: 0.0929 | Alpha: 0.5620 | Acc: 0.4666
+Epoch 04 | Loss: 0.0718 | Alpha: 0.5977 | Acc: 0.4630
+Epoch 05 | Loss: 0.0561 | Alpha: 0.5942 | Acc: 0.4608
+Epoch 06 | Loss: 0.0454 | Alpha: 0.5825 | Acc: 0.4754
+Epoch 07 | Loss: 0.0390 | Alpha: 0.5607 | Acc: 0.4191
+Epoch 08 | Loss: 0.0358 | Alpha: 0.5776 | Acc: 0.4557
+Epoch 09 | Loss: 0.0306 | Alpha: 0.5676 | Acc: 0.4500
+Epoch 10 | Loss: 0.0269 | Alpha: 0.5459 | Acc: 0.4621
+
+--- Results for model trained on en ---
+en: Alpha=0.5459 | Acc=0.4621
+de: Alpha=0.1492 | Acc=0.5002
+zh: Alpha=0.4678 | Acc=0.8229
+ru: Alpha=0.2365 | Acc=0.6623
+es: Alpha=0.5007 | Acc=0.5557
+no: Alpha=0.4340 | Acc=0.7788
+
+==================================================
+Training on: zh
+==================================================
+Epoch 01 | Loss: 0.1074 | Alpha: 0.4678 | Acc: 0.4146
+Epoch 02 | Loss: 0.0448 | Alpha: 0.4310 | Acc: 0.3955
+Epoch 03 | Loss: 0.0342 | Alpha: 0.4014 | Acc: 0.4188
+Epoch 04 | Loss: 0.0279 | Alpha: 0.4159 | Acc: 0.4179
+Epoch 05 | Loss: 0.0240 | Alpha: 0.4256 | Acc: 0.4100
+Epoch 06 | Loss: 0.0214 | Alpha: 0.4360 | Acc: 0.4040
+Epoch 07 | Loss: 0.0180 | Alpha: 0.3970 | Acc: 0.4315
+Epoch 08 | Loss: 0.0165 | Alpha: 0.4225 | Acc: 0.4188
+Epoch 09 | Loss: 0.0146 | Alpha: 0.3596 | Acc: 0.4200
+Epoch 10 | Loss: 0.0126 | Alpha: 0.3536 | Acc: 0.4167
+
+--- Results for model trained on zh ---
+en: Alpha=0.3536 | Acc=0.4167
+de: Alpha=0.2176 | Acc=0.5348
+zh: Alpha=0.4723 | Acc=0.8517
+ru: Alpha=0.1882 | Acc=0.6737
+es: Alpha=0.2597 | Acc=0.5425
+no: Alpha=0.3659 | Acc=0.7669
+
+==================================================
+Training on: es
+==================================================
+Epoch 01 | Loss: 0.2602 | Alpha: 0.3882 | Acc: 0.4164
+Epoch 02 | Loss: 0.1490 | Alpha: 0.4189 | Acc: 0.4300
+Epoch 03 | Loss: 0.1122 | Alpha: 0.4032 | Acc: 0.4112
+Epoch 04 | Loss: 0.0883 | Alpha: 0.3803 | Acc: 0.4064
+Epoch 05 | Loss: 0.0706 | Alpha: 0.3784 | Acc: 0.3889
+Epoch 06 | Loss: 0.0587 | Alpha: 0.4116 | Acc: 0.4037
+Epoch 07 | Loss: 0.0470 | Alpha: 0.3982 | Acc: 0.3868
+Epoch 08 | Loss: 0.0401 | Alpha: 0.4298 | Acc: 0.3970
+Epoch 09 | Loss: 0.0362 | Alpha: 0.4160 | Acc: 0.4019
+Epoch 10 | Loss: 0.0334 | Alpha: 0.4011 | Acc: 0.3919
+
+--- Results for model trained on es ---
+en: Alpha=0.4011 | Acc=0.3919
+de: Alpha=0.4930 | Acc=0.4863
+zh: Alpha=0.0661 | Acc=0.4943
+ru: Alpha=0.4051 | Acc=0.5775
+es: Alpha=0.5912 | Acc=0.5297
+no: Alpha=0.3340 | Acc=0.6074
+
+==================================================
+Training on: de
+==================================================
+Traceback (most recent call last):
+  File "/fp/homes01/u01/ec-sigurnor/research/2/experiments/b1_transfer.py", line 43, in <module>
+    train(
+  File "/fp/homes01/u01/ec-sigurnor/research/2/src/train.py", line 75, in train
+    logits = model(**encodings, target_tokens_a=target_tokens_a, target_tokens_b=target_tokens_b)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/fp/projects01/ec30/software/easybuild/software/nlpl-pytorch/2.6.0-foss-2024a-cuda-12.6.0-Python-3.12.3/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/fp/projects01/ec30/software/easybuild/software/nlpl-pytorch/2.6.0-foss-2024a-cuda-12.6.0-Python-3.12.3/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1750, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/fp/homes01/u01/ec-sigurnor/research/2/src/a3/model.py", line 35, in forward
+    outputs = self.bert(
+              ^^^^^^^^^^
+  File "/fp/projects01/ec30/software/easybuild/software/nlpl-pytorch/2.6.0-foss-2024a-cuda-12.6.0-Python-3.12.3/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/fp/projects01/ec30/software/easybuild/software/nlpl-pytorch/2.6.0-foss-2024a-cuda-12.6.0-Python-3.12.3/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1750, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/fp/projects01/ec30/software/easybuild/software/nlpl-transformers/4.55.4-foss-2024a-Python-3.12.3/lib/python3.12/site-packages/transformers/models/modernbert/modeling_modernbert.py", line 867, in forward
+    layer_outputs = encoder_layer(
+                    ^^^^^^^^^^^^^^
+  File "/fp/projects01/ec30/software/easybuild/software/nlpl-transformers/4.55.4-foss-2024a-Python-3.12.3/lib/python3.12/site-packages/transformers/modeling_layers.py", line 93, in __call__
+    return super().__call__(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/fp/projects01/ec30/software/easybuild/software/nlpl-pytorch/2.6.0-foss-2024a-cuda-12.6.0-Python-3.12.3/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/fp/projects01/ec30/software/easybuild/software/nlpl-pytorch/2.6.0-foss-2024a-cuda-12.6.0-Python-3.12.3/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1750, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/fp/projects01/ec30/software/easybuild/software/nlpl-transformers/4.55.4-foss-2024a-Python-3.12.3/lib/python3.12/site-packages/transformers/models/modernbert/modeling_modernbert.py", line 540, in forward
+    attn_outputs = self.attn(
+                   ^^^^^^^^^^
+  File "/fp/projects01/ec30/software/easybuild/software/nlpl-pytorch/2.6.0-foss-2024a-cuda-12.6.0-Python-3.12.3/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/fp/projects01/ec30/software/easybuild/software/nlpl-pytorch/2.6.0-foss-2024a-cuda-12.6.0-Python-3.12.3/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1750, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/fp/projects01/ec30/software/easybuild/software/nlpl-transformers/4.55.4-foss-2024a-Python-3.12.3/lib/python3.12/site-packages/transformers/models/modernbert/modeling_modernbert.py", line 509, in forward
+    hidden_states = self.out_drop(self.Wo(hidden_states))
+                                  ^^^^^^^^^^^^^^^^^^^^^^
+  File "/fp/projects01/ec30/software/easybuild/software/nlpl-pytorch/2.6.0-foss-2024a-cuda-12.6.0-Python-3.12.3/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/fp/projects01/ec30/software/easybuild/software/nlpl-pytorch/2.6.0-foss-2024a-cuda-12.6.0-Python-3.12.3/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1750, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/fp/projects01/ec30/software/easybuild/software/nlpl-pytorch/2.6.0-foss-2024a-cuda-12.6.0-Python-3.12.3/lib/python3.12/site-packages/torch/nn/modules/linear.py", line 125, in forward
+    return F.linear(input, self.weight, self.bias)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 260.00 MiB. GPU 0 has a total capacity of 79.44 GiB of which 27.19 MiB is free. Including non-PyTorch memory, this process has 79.40 GiB memory in use. Of the allocated memory 75.60 GiB is allocated by PyTorch, and 3.30 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+
+Job 3125508 consumed 42.1 billing hours from project ec403.
+
+Submitted 2026-03-12T09:58:09; waited 0.0 seconds in the queue after becoming eligible to run.
+
+Requested wallclock time: 4.0 hours
+Elapsed wallclock time:   2.2 hours
+
+Job failed.
+
+Task and CPU statistics:
+ID             CPUs  Tasks  CPU util                Start  Elapsed  Exit status
+3125508           4            0.0 %  2026-03-12T09:58:09    2.2 h  1
+3125508.batch     4      1    26.5 %  2026-03-12T09:58:09    2.2 h  1
+
+Used CPU time:   2.3 CPU hours
+Unused CPU time: 6.5 CPU hours
+
+Memory statistics, in GiB:
+ID              Alloc   Usage
+3125508          32.0        
+3125508.batch    32.0     2.9
+
+Job 3125508 completed at Thu Mar 12 12:11:06 CET 2026

@@ -1,0 +1,8 @@
+/var/spool/slurmd/job3132807/slurm_script: line 20: conda: command not found
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+ModuleNotFoundError: No module named 'torch'
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+ModuleNotFoundError: No module named 'torch'
+python: can't open file '/fp/homes01/u01/ec-sigurnor/research/2/experiment_b2_all_langs.py': [Errno 2] No such file or directory

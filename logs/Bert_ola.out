@@ -1,0 +1,40 @@
+Starting job 3114322 on gpu-1 on Fox at Tue Mar 10 09:23:34 CET 2026
+
+Laster tokenizer...
+Laster data...
+Laster modell...
+Trener...
+Epoch 01 | Loss: 1.0356 | Alpha: 0.1301 | Acc: 0.4366
+Epoch 02 | Loss: 0.7432 | Alpha: 0.1899 | Acc: 0.4146
+Epoch 03 | Loss: 0.5760 | Alpha: 0.2229 | Acc: 0.3789
+Epoch 04 | Loss: 0.4314 | Alpha: 0.2143 | Acc: 0.3795
+Epoch 05 | Loss: 0.3075 | Alpha: 0.1249 | Acc: 0.4131
+Epoch 06 | Loss: 0.2292 | Alpha: 0.1285 | Acc: 0.3650
+Epoch 07 | Loss: 0.1745 | Alpha: 0.2491 | Acc: 0.3692
+Epoch 08 | Loss: 0.1335 | Alpha: 0.2146 | Acc: 0.3940
+Epoch 09 | Loss: 0.1123 | Alpha: 0.2099 | Acc: 0.3925
+Epoch 10 | Loss: 0.0964 | Alpha: 0.2110 | Acc: 0.3756
+
+Job 3114322 consumed 6.1 billing hours from project ec403.
+
+Submitted 2026-03-10T09:23:33; waited 0.0 seconds in the queue after becoming eligible to run.
+
+Requested wallclock time: 30.0 minutes
+Elapsed wallclock time:   19.4 minutes
+
+Job exited normally.
+
+Task and CPU statistics:
+ID             CPUs  Tasks  CPU util                Start   Elapsed  Exit status
+3114322           4            0.0 %  2026-03-10T09:23:33  1162.0 s  0
+3114322.batch     4      1    25.7 %  2026-03-10T09:23:33  1162.0 s  0
+
+Used CPU time:   19.9 CPU minutes
+Unused CPU time: 57.6 CPU minutes
+
+Memory statistics, in GiB:
+ID              Alloc   Usage
+3114322          32.0        
+3114322.batch    32.0     1.4
+
+Job 3114322 completed at Tue Mar 10 09:42:55 CET 2026

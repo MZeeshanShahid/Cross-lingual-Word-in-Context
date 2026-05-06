@@ -1,0 +1,39 @@
+Starting job 3105602 on c1-11 on Fox at Mon Mar 9 12:23:29 CET 2026
+
+Laster embeddings...
+Laster data...
+Trener...
+Epoch 01 | Loss: 1.2373 | Alpha: 0.0663 | Acc: 0.3072
+Epoch 02 | Loss: 1.1116 | Alpha: 0.0889 | Acc: 0.3106
+Epoch 03 | Loss: 1.0686 | Alpha: 0.1535 | Acc: 0.3508
+Epoch 04 | Loss: 1.0333 | Alpha: 0.1164 | Acc: 0.3520
+Epoch 05 | Loss: 1.0078 | Alpha: 0.1836 | Acc: 0.3538
+Epoch 06 | Loss: 0.9884 | Alpha: 0.2113 | Acc: 0.3698
+Epoch 07 | Loss: 0.9631 | Alpha: 0.1912 | Acc: 0.3184
+Epoch 08 | Loss: 0.9419 | Alpha: 0.1781 | Acc: 0.3644
+Epoch 09 | Loss: 0.9236 | Alpha: 0.1907 | Acc: 0.3429
+Epoch 10 | Loss: 0.9069 | Alpha: 0.1936 | Acc: 0.3635
+
+Job 3105602 consumed 0.2 billing hours from project ec403.
+
+Submitted 2026-03-09T12:23:24; waited 5.0 seconds in the queue after becoming eligible to run.
+
+Requested wallclock time: 30.0 minutes
+Elapsed wallclock time:   1.4 minutes
+
+Job exited normally.
+
+Task and CPU statistics:
+ID             CPUs  Tasks  CPU util                Start  Elapsed  Exit status
+3105602           4            0.0 %  2026-03-09T12:23:29   83.0 s  0
+3105602.batch     4      1    39.6 %  2026-03-09T12:23:29   83.0 s  0
+
+Used CPU time:   2.2 CPU minutes
+Unused CPU time: 3.3 CPU minutes
+
+Memory statistics, in GiB:
+ID              Alloc   Usage
+3105602          32.0        
+3105602.batch    32.0     2.5
+
+Job 3105602 completed at Mon Mar 9 12:24:52 CET 2026
