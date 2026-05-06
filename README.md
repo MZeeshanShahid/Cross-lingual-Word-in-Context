@@ -6,3 +6,9 @@ Full description of the task:
 
 # How to run task C: 
 Run slurm/c.slurm. This will generate the file prediction.jsonl. On our github the prediction file is called final_predictions.jsonl. The model is in the directory /cluster/work/projects/ec403/ec-ogskeie.
+
+
+Team members:
+Sigurd Norbye
+Ola Skeie
+Zeeshan Shahid
